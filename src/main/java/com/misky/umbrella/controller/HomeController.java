@@ -1,5 +1,6 @@
-package com.example.misky.umbrella.controller;
+package com.misky.umbrella.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,19 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/home")
 public class HomeController {
     
-    @RequestMapping("/welcome")
+    @RequestMapping("")
     public String welcome() {
-        return "welcome, Taylor";
+        return "Welcome, Taylor";
     }
 
     @RequestMapping("/test")
     public Map<String,Object> test(String userName) {
         Map<String, Object> result = new HashMap<>();
         result.put("name", userName);
-        result.put("date", new Date());
+        result.put("date", new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date()));
         return result;
     }
 
