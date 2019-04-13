@@ -14,7 +14,11 @@ public class ReimbursementController {
 
     @RequestMapping("init")
     public HashMap<String,Object> init() {
-        return new HashMap<>();
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("reimburseStatus", false);
+        result.put("effectiveTime", false);
+        result.put("reimburseStatus", false);
+        return result;
     }
 
     @RequestMapping(value="addInit", method=RequestMethod.GET)

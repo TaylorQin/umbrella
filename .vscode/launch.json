@@ -9,18 +9,18 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - DemoApplication",
+            "name": "CodeLens (Launch) - Application",
             "request": "launch",
-            "mainClass": "com.example.misky.umbrella.DemoApplication",
+            "mainClass": "com.misky.umbrella.Application",
             "projectName": "umbrella"
         },
         {
             "type": "java",
-            "name": "Spring Boot-DemoApplication<umbrella>",
+            "name": "Spring Boot-Application<umbrella>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.misky.umbrella.DemoApplication",
+            "mainClass": "com.misky.umbrella.Application",
             "projectName": "umbrella",
             "args": ""
         }
